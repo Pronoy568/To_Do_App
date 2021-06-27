@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="pic">
+           <img src="./dom.png"/>
+        </div>
+        <h1 id="header" class="header">To-Do App</h1>
+
+        <form class="new-task-container box">
+            <label for="new-task">Add New Task</label>
+            <input type="text" id="new-task"/>
+            <input type="submit" id="addTask" value="Add Task"/>
+        </form>
+
+        <div class="list">
+            <div class="todo-list box">
+                <h2>Incomplete Tasks</h2>
+                <ul id="items">
+                    <li class="item">
+                        <input type="checkbox"/>
+                        <label>Task Name</label>
+                    </li>
+                    <li class="item">
+                        <input type="checkbox"/>
+                        <label>Add Name</label>
+                    </li>
+                    <li class="item">
+                        <input type="checkbox"/>
+                        <label>Extra Name</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="complete-list box">
+                <h1>Completed Tasks</h1>
+                <ul>
+                    <li class="item">Delete Name<button class="delete">Delete</button></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
